@@ -1,0 +1,38 @@
+#gallery {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+
+}
+
+#gallery a img {
+    margin-top: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
+    width: 250px;
+    height: 250px;
+    border-radius: 10px;
+}
+
+[class |=hidden ] {
+    display: none;
+}
+
+#links {
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+    margin-left: 30px;
+}
+
+#links a {
+    color: rgb(107, 220, 255);
+    text-decoration: none;
+    margin-bottom: 10px;
+    font-size: 18px;
+}
+
+#links a:hover {
+    text-decoration: underline;
+}
