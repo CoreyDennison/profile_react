@@ -19,7 +19,7 @@ class Projects extends Component {
       backArrow: false,
       projectTitle: '',
       projectDescrip: '',
-      imageArray: [],
+      projectDescrip2: '',
       jocVisible: false,
       sbaVisible: false,
       msaVisible: false,
@@ -77,7 +77,7 @@ class Projects extends Component {
   }
 
   openProject4() {
-    document.title='Over The Bump App';
+    document.title='Over The Bump Mobile App';
     this.setState({
       title: '',
       projectTitle: 'Over The Bump',
@@ -91,7 +91,15 @@ class Projects extends Component {
       and eventually building a minimal viable product of the app by creating an interactive prototype of the app 
       using InVision and carrying out user testing in order to recieve feedback. Finally, I created a specifications 
       document detailing the whole process from beginning to end, listing my findings and decisions.`,
-      otbVisible: true
+      otbVisible: true,
+      projectDescrip2: `Once Over The Bump had been developed, I was then tasked with a new project which involved establishing a 
+      marketing campaign for the app. For this, I analysed previous marketing campaigns with similar motivations to the Over The Bump 
+      app, and review what they did and didn't find successful and implement that to my own. As well as this, I also came up with social 
+      media campaigns for specifically chosen social media sites and when would be a suitable date to roll out my campaign depending on 
+      relevant data I had researched. I used the task managment software MeisterTask and its corresponding mind mapping software 
+      MindMeister to organise my work, come up with ideas and keep record of my work. From the knowledge I gathered for the app's 
+      marketing campaign, I was then tasked with creating Facebook advertisements for a course at my college, and then recording and 
+      presenting the results and my findings.`
     }) 
   }
 
@@ -118,6 +126,7 @@ class Projects extends Component {
     this.setState({
       title: 'Projects',
       projectTitle: '',
+      projectDescrip2: '',
       setVisible: true,
       showGallery: false,
       backArrow: false,
@@ -138,24 +147,46 @@ class Projects extends Component {
         <h1>{this.state.title}</h1>
         <h2>{ this.state.projectTitle }</h2>
         <div className = 'projects' style={{display: this.state.setVisible ? null : 'none'}}>
-          <img src='/images/joc.jpg' width="250px" height="250px" alt="" onClick={() => this.openProject1()}/>
-          <img src='/images/artist.jpg' width="250px" height="250px" alt="" onClick={() => this.openProject2()}/>
-          <img src='/images/display.jpeg' width="250px" height="250px" alt="" onClick={() => this.openProject3()}/>
-          <img src='/images/otb.jpg' width="250px" height="250px" alt="" onClick={() => this.openProject4()}/>
-          <img src='/images/mm.jpg' width="250px" height="250px" alt="" onClick={() => this.openProject5()}/>
+
+          <div className="joc_con" onClick={() => this.openProject1()}>           
+            <p>The Joy Of Chá</p> 
+          </div>
+
+          <div className="spotify_con" onClick={() => this.openProject2()}>
+            <p>Spotify Artist Battle</p>
+          </div>
+
+          <div className="movie_con" onClick={() => this.openProject3()}>
+            <p>Movie Search React App</p>
+          </div>
+
+          <div className="otb_con" onClick={() => this.openProject4()}>
+            <p>Over The Bump Mobile App</p>
+          </div>
+
+          <div className="mm_con" onClick={() => this.openProject5()}>
+            <p>Mac Motors Database</p>
+          </div>
+
         </div>
 
         <div id="projectPage">
-            <p>{this.state.projectDescrip}</p>
+          <p>{this.state.projectDescrip}</p>
 
-            <SimpleReactLightbox>
-              { this.state.jocVisible ? <JOCImages/> : null }
-              { this.state.sbaVisible ? <SBAImages /> : null }
-              { this.state.msaVisible ? <MSAImages /> : null }
-              { this.state.otbVisible ? <OTBImages /> : null }
-              { this.state.mmVisible ? <MMImages /> : null }
-            </SimpleReactLightbox>
-      </div>
+          <SimpleReactLightbox>
+            { this.state.jocVisible ? <JOCImages/> : null }
+            { this.state.sbaVisible ? <SBAImages /> : null }
+            { this.state.msaVisible ? <MSAImages /> : null }
+            { this.state.otbVisible ? <OTBImages /> : null }
+            { this.state.mmVisible ? <MMImages /> : null }
+          </SimpleReactLightbox>
+
+          <p>{this.state.projectDescrip2}</p>
+
+          <SimpleReactLightbox>
+            { this.state.otbVisible ? <OTBImages /> : null }
+          </SimpleReactLightbox>
+        </div>
 
       </div>
     )

@@ -15,7 +15,7 @@ h3:hover {
 
 h1 {
     margin-left: 30px;
-    color: white;
+    color: white;       
 }
 
 h2 {
@@ -30,21 +30,193 @@ h2 {
     flex-direction: row;
     justify-content: space-evenly;
     flex-wrap: wrap;
-    margin-top: -30px;
-    margin-left: -20px;
+    margin-top: 80px;
 }
 
-.projects img {
-    margin-top: 50px;
-    margin-left: 20px;
+.projects .joc_con, .spotify_con, .movie_con, .otb_con, .mm_con {
+    margin-bottom: 30px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+/*-----------Joy Of Chá Thumbnail in Projects section ----------*/
+.projects .joc_con {
+    border: 3px solid rgb(103, 187, 255);
     border-radius: 10px;
-    border: 2px solid rgb(103, 187, 255);
+    width: 250px;
+    height: 250px;
+    background-image: url("../src/joc.jpg");
+    background-size: contain;
 }
 
+.projects .joc_con p {
+    color: white;
+    font-size: 22px;
+    background-color: rgb(103, 187, 255);
+    margin-top: 0px;
+    margin-left: -2px;
+    margin-right: -2px;
+    padding-top: 111px;
+    padding-left: 50px;
+    padding-bottom: 109.5px;
+    border-radius: 10px;
+    opacity: 0;
+}
 
-.projects img:hover {
+.projects .joc_con:hover {
     cursor: pointer;
 }
+
+.projects .joc_con p:hover {
+    opacity: 0.9;
+    transition: ease-in-out;
+    transition-duration: 0.3s;
+}
+/*---------------END-------------*/
+
+/*-----------Spotify Thumbnail in Projects section ----------*/
+.projects .spotify_con {
+    border: 3px solid rgb(103, 187, 255);
+    border-radius: 10px;
+    width: 250px;
+    height: 250px;
+    background-image: url("../src/artist.jpg");
+    background-size: contain;
+}
+
+.projects .spotify_con p {
+    color: white;
+    font-size: 22px;
+    background-color: rgb(103, 187, 255);
+    margin-top: 0px;
+    margin-left: -2px;
+    margin-right: -2px;
+    padding-top: 111px;
+    padding-left: 35px;
+    padding-bottom: 109.5px;
+    border-radius: 10px;
+    opacity: 0;
+}
+
+.projects .spotify_con:hover {
+    cursor: pointer;
+}
+
+.projects .spotify_con p:hover {
+    opacity: 0.9;
+    transition: ease-in-out;
+    transition-duration: 0.3s;
+}
+/*---------------END-------------*/
+
+/*-----------Movie Search Thumbnail in Projects section ----------*/
+.projects .movie_con {
+    border: 3px solid rgb(103, 187, 255);
+    border-radius: 10px;
+    width: 250px;
+    height: 250px;
+    background-image: url("../src/display.jpg");
+    background-size: cover;
+}
+
+.projects .movie_con p {
+    color: white;
+    font-size: 22px;
+    text-align: center;
+    background-color: rgb(103, 187, 255);
+    margin-top: 0px;
+    margin-left: -3px;
+    margin-right: -3px;
+    padding-top: 100px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 91px;
+    border-radius: 10px;
+    opacity: 0;
+}
+
+.projects .movie_con:hover {
+    cursor: pointer;
+}
+
+.projects .movie_con p:hover {
+    opacity: 0.9;
+    transition: ease-in-out;
+    transition-duration: 0.3s;
+}
+/*---------------END-------------*/
+
+/*-----------Over The Bump Thumbnail in Projects section ----------*/
+.projects .otb_con {
+    border: 3px solid rgb(103, 187, 255);
+    border-radius: 10px;
+    width: 250px;
+    height: 250px;
+    background-image: url("../src/otb.jpg");
+    background-size: cover;
+}
+
+.projects .otb_con p {
+    color: white;
+    font-size: 22px;
+    text-align: center;
+    background-color: rgb(103, 187, 255);
+    margin-top: 0px;
+    margin-left: -2px;
+    margin-right: -2px;
+    padding-top: 100px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 92px;
+    border-radius: 10px;
+    opacity: 0;
+}
+
+.projects .otb_con:hover {
+    cursor: pointer;
+}
+
+.projects .otb_con p:hover {
+    opacity: 0.9;
+    transition: ease-in-out;
+    transition-duration: 0.3s;
+}
+/*---------------END-------------*/
+
+/*-----------Mac Motors Thumbnail in Projects section ----------*/
+.projects .mm_con {
+    border: 3px solid rgb(103, 187, 255);
+    border-radius: 10px;
+    width: 250px;
+    height: 250px;
+    background-image: url("../src/mm.jpg");
+    background-size: cover;
+}
+
+.projects .mm_con p {
+    color: white;
+    font-size: 22px;
+    background-color: rgb(103, 187, 255);
+    margin-top: 0px;
+    margin-left: -2px;
+    margin-right: -2px;
+    padding-top: 111px;
+    padding-left: 20px;
+    padding-bottom: 109.5px;
+    border-radius: 10px;
+    opacity: 0;
+}
+
+.projects .mm_con:hover {
+    cursor: pointer;
+}
+
+.projects .mm_con p:hover {
+    opacity: 0.9;
+    transition: ease-in-out;
+    transition-duration: 0.3s;
+}
+/*---------------END-------------*/
 
 #projectPage p {
     font-size: 18px;
